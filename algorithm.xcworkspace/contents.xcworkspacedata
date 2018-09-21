@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TestVector/TestVector.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:QuickSort/QuickSort.xcodeproj">
    </FileRef>
    <FileRef
