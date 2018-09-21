@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:QuickSort/QuickSort.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TestSort/TestSort.xcodeproj">
    </FileRef>
    <FileRef
