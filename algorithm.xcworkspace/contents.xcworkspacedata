@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TestMap/TestMap.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TestSet/TestSet.xcodeproj">
    </FileRef>
    <FileRef
