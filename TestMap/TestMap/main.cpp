@@ -79,6 +79,23 @@ int main(int argc, const char * argv[]) {
     c = first.count('z');
     cout<<c<<endl;
     
+    //multimap 允许key重复，没有定义map[]操作，其他和map一样
+    
+    std::multimap<char,int> mm;
+    
+    mm.insert(std::pair<char, int>('a', 1));
+    mm.insert(std::pair<char, int>('b', 2));
+    mm.insert(std::pair<char, int>('c', 3));
+    mm.insert(std::pair<char, int>('d', 4));
+    mm.insert(std::pair<char, int>('d', 5));
+    mm.insert(std::pair<char, int>('a', 5));
+    it = mm.begin();
+    while(it != mm.end()) {
+        cout<<(*it).first<< ":"<<(*it).second<<endl;
+        it++;
+    }
+    
+    
   
     
 //
