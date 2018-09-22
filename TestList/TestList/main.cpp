@@ -68,11 +68,14 @@ int main(int argc, const char * argv[]) {
     }
     cout<<endl;
     
-    sort(l3.begin(), l3.end());
+    
+    l3.sort();
     for ( i = l3.begin(); i != l3.end(); i++) {
         cout<<*i<< " ";
     }
     cout<<endl;
+    
+     
     
     
     return 0;
