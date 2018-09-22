@@ -8,19 +8,28 @@
 
 #include <iostream>
 #include <set>
+
 using namespace std;
 
 bool fncomp (int lhs, int rhs) {return lhs>rhs;}
 
 void testPerson();
 
+//set和map的不同是set的key和value相同；
 int main(int argc, const char * argv[]) {
     // insert code here...
-    int a[7] = {4, 3, 6, 8, 9, 2, 1 };  //set不支持重复， multiset支持重复
-    set<int> s(a, a + 7);
+    int a[8] = {4, 3, 6, 8, 9, 2, 1 , 1};  //set不支持重复， multiset支持重复
+    set<int> s(a, a + 8);
+    multiset<int> ss(a,  a+ 8);
     set<int>::iterator it;
     it = s.begin();
     while(it != s.end()) {
+        cout<<*it++<<" ";
+    }
+    cout<<endl;
+    
+    it = ss.begin();
+    while(it != ss.end()) {
         cout<<*it++<<" ";
     }
     cout<<endl;
