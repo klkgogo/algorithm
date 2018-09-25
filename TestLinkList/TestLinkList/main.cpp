@@ -18,7 +18,7 @@ public:
         a = _a;
         b = _b;
         if (_c)
-        strcpy(c, _c);
+            strcpy(c, _c);
     }
     friend ostream& operator<<(ostream& out, const point& p);
 };
@@ -33,7 +33,7 @@ ostream& operator<<(ostream& out, const point& p)
 template <class T>
 class node {
 public:
-    T data;
+    T data; 
     node<T> *prev;
     node<T> *next;
     
