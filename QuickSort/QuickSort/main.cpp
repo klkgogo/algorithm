@@ -13,7 +13,7 @@ void sort(int *array, int n);
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    freopen("/Users/klkgogo/data/data.txt", "r", stdin);
+    freopen("/Users/lingkunkong/Desktop/data.txt", "r", stdin);
     int n;
     cin>>n;
     int *array =(int *) malloc(n * sizeof(int));
@@ -36,12 +36,14 @@ void sort(int *array, int n) {
     int key = array[0];
     while (l < r) {
         while (array[r] > key && l < r) r--;
+        if (l == r) break;
         int tmp = array[l];
         array[l] = array[r];
         array[r] = tmp;
         l++;
         
         while (array[l] < key && l < r) l++;
+        if(l == r)break;
         tmp = array[l];
         array[l] = array[r];
         array[r] = tmp;
